@@ -1,0 +1,183 @@
+.wrapper {
+    width: 1020px;
+    margin: 0 auto;
+    padding: 0;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+}
+
+header {
+    background: #2D303A;
+    border-bottom: 5px solid #323746;
+    padding: 20px 40px;
+
+}
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.nav li {
+    margin-left: 15px;
+padding: 8px 5px 2px;
+font-size: 12px;
+color:#494E62;
+}
+
+.nav li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    color: #F06C64;
+
+}
+
+.nav li:first-child {
+    list-style-type: none;
+
+
+}
+
+.activ {
+    color: #F06C64;
+}
+
+.nav {
+    /*  width: 365px; */
+    float: right;
+    /* line-height: 65px; */
+    list-style: disc;
+    list-style-position: outside;
+    display: flex;
+}
+
+.logo-head {
+    color: #FFFFFF;
+    font-size: 24px;
+    float: left;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.logo-head,
+.nav {
+    line-height: 40px;
+    margin: 0;
+}
+
+.logo-head:hover {
+    color: #F06C64;
+}
+
+.sign-multy {
+    color: #DC6660;
+}
+
+.content {
+    background: #F06C64;
+    margin: 0;
+    padding-bottom: 68px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 50px 25px 0px 25px;
+    box-sizing: border-box;
+    background: #F06C64;
+}
+
+.flex-container a {
+    padding: 50px 25px
+}
+
+.flex-container .phone-vert {
+    padding-right: 30px;
+}
+
+.flip-horiz {
+    transform: scale(-1);
+}
+
+.flex-container a {
+    padding: 50px 10px;
+}
+
+.footer {
+    background: #F2F2F2;
+    margin: 0;
+    padding: 35px 45px 35px 25px;
+}
+
+.title-h2 {
+    padding: 20px 0 0 10px;
+}
+
+.all-text {
+    margin-left: 92px;
+    padding-top: 2px;
+}
+
+.all-text h3,
+.text {
+    margin: 15px 0;
+    color: #666D89;
+}
+
+.all-text h3 {
+    color: #666D89;
+}
+
+.all-text text {
+    color: #7E86A4;
+    font-weight: lighter;
+
+}
+
+.text {
+    line-height: 18px;
+}
+
+.footer-main {
+    line-height: 32px;
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+.footer-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.footer-img img {
+    width: 60px;
+    float: left;
+    margin-left: 15px;
+    margin-top: 24px;
+}
+
+.footer-pice {
+    width: 310px;
+}
+
+.footer-pice p {
+    font-size: 12px;
+
+}
+
+.footer-h2 {
+    margin: 0;
+    color: #666D89;
+    font-size: 32px;
+    /* padding-top: 20px; */
+}
