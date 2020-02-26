@@ -1,0 +1,115 @@
+body {
+    background: #282828;
+
+}
+
+.wrapper {
+    width: 1020px;
+    margin: 0 auto;
+    background: #2D303A;
+    padding: 0;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+
+}
+
+.block-Portfolio {
+    padding-bottom: 60px;
+    border-bottom: 7px solid #323746;
+}
+
+.Portfolio-nav {
+    color: #666D89;
+}
+
+.nav-list li {
+    display: inline-block;
+    padding: 8px;
+    border: 1px solid #666D89;
+    border-radius: 10%;
+}
+
+.nav-list li:hover {
+    color: #DEDEDE;
+    cursor: pointer;
+    border: 1px solid #DEDEDE;
+}
+
+.img-galery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-galery img {
+    margin: 10px;
+}
+
+.about-us {
+    background: #F2F2F2;
+    color: #666D89;
+    padding: 30px 30px 0 30px;
+    border-bottom: 7px solid #FFFFFF;
+}
+
+.about-us-h1 {
+    margin: 23px;
+    font-size: 32px;
+}
+
+.text-about-us {
+    line-height: 30px;
+    margin: 23px 0px 40px 23px;
+    font-size: 19px;
+    font-weight: lighter;
+}
+
+.flex-about-people {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-people {
+    width: 310px;
+    margin-bottom: 47px;
+    margin-left: 8px;
+
+}
+
+.about-people img {
+    width: 300px;
+}
+
+.name-about-people {
+    font-size: 19px;
+    margin: 19px 0px 0 19px;
+}
+
+.text-about-people {
+    font-size: 13px;
+    margin-left: 25px;
+}
+
+.fab {
+    font-size: 16px;
+    color: grey;
+    padding: 13px;
+}
+
+.border-icons {
+    margin-left: 10px;
+    display: inline-block;
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+
+.fa-google-plus-g {
+    padding: 13px 10px 13px 10px;
+}
+
+.fa-facebook-f {
+    font-size: 14px;
+    padding: 14px 16px 13px 16px;
+}
