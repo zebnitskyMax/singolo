@@ -1,5 +1,6 @@
 body {
     background: #282828;
+    margin: 0;
 
 }
 
@@ -13,26 +14,51 @@ body {
 
 }
 
-.block-Portfolio {
-    padding-bottom: 60px;
+.block-portfolio {
+    padding-bottom: 56px;
     border-bottom: 7px solid #323746;
 }
 
-.Portfolio-nav {
+.portfolio-nav {
     color: #666D89;
+}
+
+.portfolio-nav h1 {
+    font-size: 28px;
+    margin: 0 1px 1px 45px;
+}
+
+.portfolio-nav p {
+    margin: 22px 1px 1px 40px;
+    font-size: 17px;
+}
+
+.nav-list {
+    margin: 15px 1px 12px 0px;
 }
 
 .nav-list li {
     display: inline-block;
-    padding: 8px;
-    border: 1px solid #666D89;
-    border-radius: 10%;
+
 }
 
-.nav-list li:hover {
+.nav-list-link {
+    color: #666D89;
+    padding: 3px 6px 2px 6px;
+    border: 1px solid#666D89;
+    border-radius: 9%;
+    font-size: 12px;
+    margin-left: 6px;
+    text-decoration: none;
+}
+
+.nav-list-link:hover {
     color: #DEDEDE;
-    cursor: pointer;
+    /*    cursor: pointer; */
     border: 1px solid #DEDEDE;
+    border-radius: 9%;
+    padding: 3px 6px 2px 6px;
+    margin-left: 6px;
 }
 
 .img-galery {
@@ -44,6 +70,11 @@ body {
 
 .img-galery img {
     margin: 10px;
+
+}
+
+.img-galery img:nth-last-child(-n+3) {
+    display: none;
 }
 
 .about-us {
@@ -54,13 +85,13 @@ body {
 }
 
 .about-us-h1 {
-    margin: 23px;
+    margin: 28px 10px 10px 10px;
     font-size: 32px;
 }
 
 .text-about-us {
     line-height: 30px;
-    margin: 23px 0px 40px 23px;
+    margin: 16px 0px 45px 10px;
     font-size: 19px;
     font-weight: lighter;
 }
@@ -73,8 +104,8 @@ body {
 
 .about-people {
     width: 310px;
-    margin-bottom: 47px;
-    margin-left: 8px;
+    margin-bottom: 65px;
+    margin-left: 10px;
 
 }
 
@@ -84,32 +115,38 @@ body {
 
 .name-about-people {
     font-size: 19px;
-    margin: 19px 0px 0 19px;
+    margin: 10px 0px 0 0px;
 }
 
 .text-about-people {
-    font-size: 13px;
-    margin-left: 25px;
+    font-size: 12px;
+    margin-left: 1px;
+    margin-bottom: 27px;
+    line-height: 17px;
 }
 
 .fab {
-    font-size: 16px;
+    font-size: 15px;
     color: grey;
-    padding: 13px;
+    padding: 8px;
 }
 
 .border-icons {
-    margin-left: 10px;
+    margin-left: 3px;
     display: inline-block;
     border: 1px solid grey;
     border-radius: 50%;
 }
 
+.border-icons a {
+    text-decoration: none;
+}
+
 .fa-google-plus-g {
-    padding: 13px 10px 13px 10px;
+    padding: 8px 6px 8px 6px;
 }
 
 .fa-facebook-f {
     font-size: 14px;
-    padding: 14px 16px 13px 16px;
+    padding: 9px 10px 9px 13px;
 }
