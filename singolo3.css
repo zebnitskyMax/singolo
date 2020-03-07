@@ -1,0 +1,179 @@
+body {
+    font-family: 'Lato', serif;
+    background: #282828;
+    color: #F0D8D9;
+
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 1020px;
+    background: #F06C64;
+    padding: 58px 0 0 0px;
+    box-sizing: border-box;
+}
+
+.header-h1 {
+    margin: 0px 0 0 38px;
+    letter-spacing: -1px;
+}
+
+.text-header {
+    margin: 19px 41px 0 41px;
+    font-size: 17px;
+    line-height: 29px;
+    text-align: justify;
+}
+
+.main {
+    margin: 20px 0 0 0;
+    border-bottom: 5px solid #EA676B;
+}
+
+.block-input {
+    margin: 25px 0 0 0;
+}
+
+.block-input input {
+    display: block;
+    margin: 0px 0 18px 0;
+    width: 100%;
+    color: white;
+}
+
+.block-input textarea {
+    margin: 0 0 0 0;
+    width: 100%;
+  /*   padding-bottom: 35px; */
+    color: white;
+}
+
+.form-button {
+    background: #db4b44;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 13px 0;
+    transition: .7s ease;
+
+}
+.form-button:hover{
+    background: rgb(231, 206, 205);
+    
+}
+
+.input-style {
+    background: #D6564F;
+    border-radius: 5px;
+    border: none;
+    color: #F2888B;
+    resize: none;
+    font-size: 12px;
+    padding: 11px 2px 11px 16px;
+}
+
+.block-form {
+    width: 59%;
+    float: left;
+    margin: 0px 0 0 38px;
+}
+
+.block-contact {
+    width: 34%;
+    float: right;
+}
+
+.block-contact h2 {
+    font-size: 19px;
+    margin: 22px 0 0 5px;
+}
+
+.block-contact .text {
+    font-size: 12px;
+    line-height: 21px;
+    margin: 9px 23px 0px 5px;
+}
+
+.clear {
+    clear: both;
+}
+
+.fas-marker {
+    float: left;
+    margin-right: 45px;
+}
+
+.location {
+    margin-top: 22px;
+}
+
+.location .fas-marker {
+    font-size: 12px;
+    margin: 6px 13px 0 7px;
+}
+
+.conect {
+    text-decoration: none;
+    color: #F0D8D9;
+    margin-left: 9px;
+    width: 70%;
+    font-size: 12px;
+}
+
+.tie {
+    margin: 2px 0;
+}
+.tie .fa-phone{
+    font-size: 12px;
+    margin: 0px 0 0 6px;
+}
+.tie .fa-envelope{
+    font-size: 12px;
+    margin-left: 7px;
+}
+
+footer {
+    background: #2D303A;
+
+}
+
+.all-footer {
+    padding: 20px 0 20px 0;
+}
+
+footer p {
+    float: left;
+    font-size: 12px;
+    margin-left: 40px;
+    color: #666D89;
+}
+
+.social-networks {
+    text-align: end;
+    margin-right: 40px;
+}
+
+.fab {
+    font-size: 16px;
+    color: grey;
+    padding: 8px;
+}
+
+.border-icons {
+    margin-left: 4px;
+    display: inline-block;
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+
+.fa-google-plus-g {
+    padding: 7px 5px 8px 5px;
+    ;
+}
+
+.fa-facebook-f {
+    font-size: 14px;
+    padding: 9px 11px 8px 12px;
+}
