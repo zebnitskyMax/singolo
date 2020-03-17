@@ -13,46 +13,57 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="clear">
+    <div id="HOME" class="wrapper">
+        <header  class="clear">
             <a href="">
                 <h1 class="logo-head">Singolo<sup class="sign-multy"> *</sup>
                 </h1>
             </a>
-            <ul class="nav">
+            <ul class="nav" id="menu_li">
                 <li class="active">
-                    <a href="">HOME</a>
+                    <a class="a_color" href="#HOME">HOME</a>
                 </li>
                 <li>
-                    <a href="">SERVICES</a>
+                    <a class="a_color" href="#SERVICES">SERVICES</a>
                 </li>
                 <li>
-                    <a href="">PORTFOLIO</a>
+                    <a class="a_color" href="#PORTFOLIO">PORTFOLIO</a>
                 </li>
                 <li>
-                    <a href="">ABOUT</a>
+                    <a class="a_color" href="#ABOUT">ABOUT</a>
                 </li>
                 <li>
-                    <a href="">CONTACT</a>
+                    <a class="a_color" href="#CONTACT">CONTACT</a>
                 </li>
             </ul>
         </header>
         <main>
             <article class="main-singolo_1">
                 <section class="content-singolo_1">
-                    <div class="flex-container">
+                    <!-- <div id="phone2" class="phone_2">
+                                                
+                    </div> -->
+                    <div id="phone1" class="flex-container">
                         <a href=""><img src="assets/img/chevron_left.png" alt=""></a>
+                        <ul class="all_phone">
+                            <li class="pho1">
+                                <img class="phone-vert" src="assets/img/phone_vert.png" alt="">
+                                <img class="phone-horiz" src="assets/img/phone_horiz.png" alt="">
+                            </li>
+                            <li class="pho2">
+                                <img class="phone_2" src="assets/Slider.png" alt="">
+                            </li>
+                        </ul>
 
-                        <img class="phone-vert" src="assets/img/phone_vert.png" alt="">
-                        <img src="assets/img/phone_horiz.png" alt="">
 
                         <a class="flip-horiz" href=""><img src="assets/img/chevron_left.png" alt=""></a>
                     </div>
                 </section>
-                <section class="footer-singolo_1">
+                <section id="SERVICES" class="footer-singolo_1">
                     <div class="title-h2">
                         <h2 class="footer-h2">Our Services</h2>
-                        <p class="text-singolo_1_p footer-main-singolo_1">Fusce dapibus, tellus ac cursus commodo, tortor
+                        <p class="text-singolo_1_p footer-main-singolo_1">Fusce dapibus, tellus ac cursus commodo,
+                            tortor
                             mauris condimentum. Duis
                             mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
                             Fusce
@@ -117,7 +128,7 @@
                 </section>
             </article>
             <article class="main-singolo_2">
-                <section class="block-portfolio">
+                <section id="PORTFOLIO" class="block-portfolio">
                     <div class="portfolio-nav">
                         <h1>
                             Portfolio
@@ -126,30 +137,30 @@
                             Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec
                             elit.
                         </p>
-                        <ul class="nav-list">
+                        <ul id="portfolio_menu" class="nav-list">
                             <li>
-                                <a href="" class="nav-list-link">
+                                <a class="nav-list-link">
                                     All
                                 </a>
                             </li>
                             <li>
-                                <a href="" class="nav-list-link">
+                                <a class="nav-list-link">
                                     Web Design
                                 </a>
                             </li>
                             <li>
-                                <a href="" class="nav-list-link">
+                                <a  class="nav-list-link">
                                     Graphic Design
                                 </a>
                             </li>
                             <li>
-                                <a href="" class="nav-list-link">
+                                <a class="nav-list-link">
                                     Artwork
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <div class="img-galery">
+                    <div id="galery_picture" class="img-galery">
                         <img src="assets/img/1.png" alt="">
                         <img src="assets/img/2.png" alt="">
                         <img src="assets/img/3.png" alt="">
@@ -167,7 +178,7 @@
                         <img src="assets/img/12.png" alt="">
                     </div>
                 </section>
-                <section class="about-us">
+                <section id="ABOUT" class="about-us">
                     <div>
                         <div>
                             <h1 class="about-us-h1">
@@ -275,29 +286,32 @@
                     </div>
                 </section>
             </article>
-            <article class="wrapper-singolo_3">
+            <article id="CONTACT" class="wrapper-singolo_3">
                 <section class="header-singolo_3">
                     <h1 class="header-h1">
                         Get a Quote
                     </h1>
                     <p class="text text-header">
-                        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus,
-                        nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
+                        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo
+                        luctus,
+                        nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus
+                        commodo,
                         tortor mauris condimentum nibh.
                     </p>
                 </section>
                 <section class="main-singolo_3">
                     <section class="block-form">
                         <form action="" class="block-input">
-                            <input class="input-style" type="text" name="username" placeholder="Name (Required)"
-                                required>
-                            <input class="input-style" type="email" name="email" placeholder="Email (Required)"
-                                required>
-                            <input class="input-style" type="text" name="" placeholder="Subject">
-                            <textarea class="input-style" name="textarea" id="" cols="30" rows="14"
+                            <input id="name" class="input-style" type="text" name="username"
+                                placeholder="Name (Required)" required>
+                            <input id="Email" class="input-style" type="email" name="email"
+                                placeholder="Email (Required)" required>
+                            <input id="subje" class="input-style" type="text" name="" placeholder="Subject">
+                            <textarea id="Textarea" class="input-style" name="textarea" id="" cols="30" rows="14"
                                 placeholder="Describe you project in detail..."></textarea>
-                            <button class="form-button">Submit</button>
+                            <button id="btn" class="form-button">Submit</button>
                         </form>
+
                     </section>
                     <section class="block-contact">
                         <h2>
@@ -351,7 +365,15 @@
         </footer>
 
     </div>
-
+    <div id="message-block" class="hidden-message-block">
+        <div id="message">
+            <p>sent email:</p>
+            <p>subject:<span id="result_subject"></span> </p>
+            <p>describe:<span id="result_describe"></span> </p>
+            <button id="close-btn">close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
