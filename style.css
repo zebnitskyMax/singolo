@@ -1,3 +1,8 @@
+body,
+html {
+    scroll-behavior: smooth;
+}
+
 .wrapper {
     width: 1020px;
     margin: 0 auto;
@@ -83,6 +88,7 @@ header {
 }
 
 .content-singolo_1 {
+    /* position: relative; */
     background: #F06C64;
     margin: 0;
     /* padding-bottom: 67px; */
@@ -90,68 +96,88 @@ header {
 }
 
 .flex-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
-    padding: 52px 25px 0px 25px;
     box-sizing: border-box;
     background: #F06C64;
-    margin-bottom: 57px;
-
+    position: relative;
 }
 
 .view_phone_block {
     display: none;
 }
 
-/* .flex-container a {
-    padding: 50px 25px
-} */
+.black-vert {
+    position: absolute;
+    top: 115px;
+    left: 122px;
+    display: none;
+}
+
+.black-hor {
+    transform: rotate(90deg);
+    position: absolute;
+    top: 113px;
+    right: 272px;
+    display: none;
+}
+
 .all_phone {
     margin: 0;
+    padding: 0;
+
 }
 
 .all_phone li {
     list-style-type: none;
 }
 
-/* .flex-container {
-    padding-right: 30px;
-} */
-
 .phone-vert {
-    padding: 0px 70px 0px 0;
+    /* padding: 0px 70px 0px 0; */
+    
+}
+.pho1 .pdiv{
+    margin: 53px 73px 55px 0px;
 }
 
 .phone-horiz {
-    margin: 0;
-    padding: 0 36px 121px 0px;
+   /*  margin: 0;
+    padding: 0 36px 121px 0px; */
 }
 
 .flip-horiz {
     transform: scale(-1);
     z-index: 1;
+    right: 0;
 }
 
 .flex-container a {
-    padding: 50px 15px;
+    padding: 50px 40px;
+    position: absolute;
+    top: 230px;
 
 }
-.pho1{
-    /* display: none; */
-}
-.pho2{
-    position: relative;
-    top: 0;
-    display: none;
-}
-
-/* .phone_2 {
-    display: none;
-    position: relative;
-
+/* .phoneAnima::before {
+    transition: all .4s cubic-bezier(0.770, 0.000, 0.175, 1.000);
 } */
+ 
+.pho1{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+/* .pho1 div{
+    margin: 53px 73px 55px 0px;
+} */
+.pho2 {
+    /* position: absolute;
+    top: -117px;
+    display: none;
+    left: -490px; */
+}
+
+.chevron_left {
+    z-index: 1;
+}
 
 .footer-singolo_1 {
     background: #F2F2F2;
@@ -303,7 +329,8 @@ header {
     padding: 3px 6px 2px 6px;
     margin-left: 6px;
 }
-.active_nav-list-link{
+
+.active_nav-list-link {
     color: #DEDEDE;
     border: 1px solid #DEDEDE;
 }
@@ -487,17 +514,17 @@ header {
     margin: 0px 0 0 38px;
 }
 
-.block-contact {
+.block-contact-inform {
     width: 34%;
     float: right;
 }
 
-.block-contact h2 {
+.block-contact-inform h2 {
     font-size: 19px;
     margin: 22px 0 0 5px;
 }
 
-.block-contact .text {
+.block-contact-inform .text {
     font-size: 12px;
     line-height: 21px;
     margin: 9px 40px 0px 5px;
@@ -610,29 +637,32 @@ footer p {
 
 /* block for message */
 
-#message-block{
+#message-block {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background:#0008;
+    background: #0008;
 }
-#message-block.hidden-message-block{
+
+#message-block.hidden-message-block {
     display: none;
 }
-#message{
+
+#message {
     position: fixed;
     bottom: 25%;
     left: 30%;
-    background:rgba(238, 81, 72, 0.493) ;
-    border:2px solid black;
+    background: rgba(238, 81, 72, 0.493);
+    border: 2px solid black;
     border-radius: 6px;
     text-align: center;
     height: 200px;
     width: 300px;
 }
-#close-btn{
+
+#close-btn {
     background: #2D303A;
     color: white;
     border: 1px solid #2D303A;
@@ -643,6 +673,7 @@ footer p {
     cursor: pointer;
     transition: .7s ease;
 }
-#close-btn:hover{
-    background:  rgb(146, 156, 190);
+
+#close-btn:hover {
+    background: rgb(146, 156, 190);
 }

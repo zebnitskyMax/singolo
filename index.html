@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div id="HOME" class="wrapper">
+    <div  class="wrapper">
         <header  class="clear">
             <a href="">
                 <h1 class="logo-head">Singolo<sup class="sign-multy"> *</sup>
@@ -37,29 +37,35 @@
                 </li>
             </ul>
         </header>
-        <main>
+        <main id="main"> 
             <article class="main-singolo_1">
-                <section class="content-singolo_1">
+                <section id="HOME" class="content-singolo_1">
                     <!-- <div id="phone2" class="phone_2">
                                                 
                     </div> -->
                     <div id="phone1" class="flex-container">
-                        <a href=""><img src="assets/img/chevron_left.png" alt=""></a>
-                        <ul class="all_phone">
-                            <li class="pho1">
-                                <img class="phone-vert" src="assets/img/phone_vert.png" alt="">
-                                <img class="phone-horiz" src="assets/img/phone_horiz.png" alt="">
+                        <a  class="chevron_left"  onclick="plusSlides(1)"><img src="assets/img/chevron_left.png" alt=""></a>
+                        <ul class="all_phone phoneAnima">
+                            <li class="pho1  phoneSlaid">
+                                <div class="pdiv" onclick="viewBlackWindowV()">
+                                    <img id="vertPhone" class="phone-vert"  src="assets/img/phone_vert.png" alt="">
+                                    <img id="blackVert" class="black-vert" src="assets/img/black-window.png" alt="">
+                                </div>
+                                <div onclick="viewBlackWindowH()">
+                                    <img id="horPhone" class="phone-horiz"  src="assets/img/phone_horiz.png" alt="">
+                                    <img id="blackHor" class="black-hor" src="assets/img/black-window.png" alt="">
+                                </div>
                             </li>
-                            <li class="pho2">
+                            <li class="pho2 phoneAnima phoneSlaid">
                                 <img class="phone_2" src="assets/Slider.png" alt="">
                             </li>
                         </ul>
 
 
-                        <a class="flip-horiz" href=""><img src="assets/img/chevron_left.png" alt=""></a>
+                        <a class="flip-horiz"  onclick="plusSlides(-1)"><img src="assets/img/chevron_left.png" alt=""></a>
                     </div>
                 </section>
-                <section id="SERVICES" class="footer-singolo_1">
+                <section id="SERVICES" class="footer-singolo_1 block-services">
                     <div class="title-h2">
                         <h2 class="footer-h2">Our Services</h2>
                         <p class="text-singolo_1_p footer-main-singolo_1">Fusce dapibus, tellus ac cursus commodo,
@@ -178,7 +184,7 @@
                         <img src="assets/img/12.png" alt="">
                     </div>
                 </section>
-                <section id="ABOUT" class="about-us">
+                <section id="ABOUT" class="about-us block-about">
                     <div>
                         <div>
                             <h1 class="about-us-h1">
@@ -286,8 +292,8 @@
                     </div>
                 </section>
             </article>
-            <article id="CONTACT" class="wrapper-singolo_3">
-                <section class="header-singolo_3">
+            <article class="wrapper-singolo_3">
+                <section id="CONTACT" class="header-singolo_3">
                     <h1 class="header-h1">
                         Get a Quote
                     </h1>
@@ -301,7 +307,7 @@
                 </section>
                 <section class="main-singolo_3">
                     <section class="block-form">
-                        <form action="" class="block-input">
+                        <form id="form_block"  class="block-input">
                             <input id="name" class="input-style" type="text" name="username"
                                 placeholder="Name (Required)" required>
                             <input id="Email" class="input-style" type="email" name="email"
@@ -313,7 +319,7 @@
                         </form>
 
                     </section>
-                    <section class="block-contact">
+                    <section class="block-contact-inform">
                         <h2>
                             Contact Information
                         </h2>
@@ -370,7 +376,7 @@
             <p>sent email:</p>
             <p>subject:<span id="result_subject"></span> </p>
             <p>describe:<span id="result_describe"></span> </p>
-            <button id="close-btn">close</button>
+            <button id="close-btn" onclick = "clearForm()">close</button>
         </div>
     </div>
     <script src="script.js"></script>

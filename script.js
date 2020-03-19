@@ -10,6 +10,51 @@ const menuClickHandler = function (event) {
 }
 Menu.addEventListener('click', menuClickHandler);
 
+
+//Scroll block nav Menu
+
+document.addEventListener('scroll', onScroll);
+
+function onScroll(event) {
+      const curPos = window.scrollY;
+      const sections = document.querySelectorAll('#main > article > section');
+      const links = document.querySelectorAll('#menu_li a');
+      /* console.log(curPos); */
+
+      sections.forEach((el) => {
+            /* console.log(el.getAttribute('id'));  */
+            /*  el.getAttribute('id'); */
+            if (el.offsetTop <= curPos && (el.offsetTop + el.offsetHeight) > curPos)
+                  links.forEach((a) => {
+                        a.classList.remove('active_li');
+                        if (el.getAttribute('id') === a.getAttribute('href').substring(1)) {
+                              a.classList.add('active_li');
+                        }
+                  })
+      })
+}
+
+
+//Click on the phone and appear black window
+const phoneV = document.getElementById('vertPhone');
+const phoneH = document.getElementById('horPhone');
+
+const emptyV = document.getElementById('blackVert');
+const emptyH = document.getElementById('blackHor');
+
+function viewBlackWindowV() {
+     var isVisible = emptyV.style.display =="block";
+     emptyV.style.display = isVisible ? "none": "block";
+    
+         }
+
+function viewBlackWindowH() {
+      var isVisible = emptyH.style.display =="block";
+      emptyH.style.display = isVisible ? "none": "block";
+
+}
+
+
 // Portfolio, Appear border after click on picture
 
 const portfolio = document.getElementById('galery_picture');
@@ -24,6 +69,7 @@ const touchElement = function (event) {
       event.target.classList.add('img_touch');
 }
 portfolio.addEventListener('click', touchElement);
+
 
 //POP-UP
 
@@ -52,6 +98,14 @@ const closeWindow = function () {
 CLOSE_BUTTON.addEventListener('click', closeWindow);
 
 
+// clear form after close pop-up
+
+function clearForm() {
+      document.getElementById('form_block').reset();
+
+}
+
+
 //Portfolio, interactive Nav and Picture change place 
 
 const porfolioMenu = document.getElementById('portfolio_menu');
@@ -70,3 +124,32 @@ const portfolioMenuClickHandler = function (event) {
       randomizePictures();
 }
 porfolioMenu.addEventListener('click', portfolioMenuClickHandler);
+
+
+//Slider Phone
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+      showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+      showSlides(slideIndex = n)
+}
+
+function showSlides(n) {
+      var slides = document.getElementsByClassName('phoneSlaid');
+      if (n > slides.length) {
+            slideIndex = 1
+      }
+      if (n < 1) {
+            slideIndex = slides.length
+      }
+      for (var i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+      }
+      slides[slideIndex - 1].style.display = "flex";
+
+}
