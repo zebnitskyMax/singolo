@@ -153,3 +153,14 @@ function showSlides(n) {
       slides[slideIndex - 1].style.display = "flex";
 
 }
+
+
+      
+// Submit load default
+
+function loadDefault(){
+document.getElementById('btn').addEventListener("click", formDefault, false);
+}
+function formDefault(event){
+            event.preventDefault();
+      }
