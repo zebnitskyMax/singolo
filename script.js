@@ -35,34 +35,109 @@ function onScroll(event) {
 }
 
 
+//burger menu
+function getGamburger(event){
+      event.preventDefault();
+      var elem = document.getElementById('gambur');
+}
+
+function appearBurgerMenu(event) {
+      event.preventDefault();
+      var x = document.getElementById('menu_li');
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+
+
+//Slider Phone
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+      showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+      showSlides(slideIndex = n)
+}
+
+function showSlides(n) {
+      var slides = document.getElementsByClassName('phoneSlaid');
+      if (n > slides.length) {
+            slideIndex = 1
+      }
+      if (n < 1) {
+            slideIndex = slides.length
+      }
+      for (var i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+      }
+      slides[slideIndex - 1].style.display = "flex";
+
+}
+
+
 //Click on the phone and appear black window
-const phoneV = document.getElementById('vertPhone');
+/* const phoneV = document.getElementById('vertPhone');
 const phoneH = document.getElementById('horPhone');
 
 const emptyV = document.getElementById('blackVert');
 const emptyH = document.getElementById('blackHor');
 
 function viewBlackWindowV() {
-     var isVisible = emptyV.style.display =="block";
-     emptyV.style.display = isVisible ? "none": "block";
-    
-         }
+      var isVisible = emptyV.style.display == "block";
+      emptyV.style.display = isVisible ? "none" : "block";
+
+}
 
 function viewBlackWindowH() {
-      var isVisible = emptyH.style.display =="block";
-      emptyH.style.display = isVisible ? "none": "block";
+      var isVisible = emptyH.style.display == "block";
+      emptyH.style.display = isVisible ? "none" : "block";
+
+}
+ */
+function viewBlackWindow(event,a) {
+      event.preventDefault();
+      var blackDiv = a.getElementsByClassName('blackWindow')[0];
+      var isVisible = blackDiv.style.display == "block";
+      blackDiv.style.display = isVisible ? "none" : "block";
 
 }
 
 
+
+//Portfolio, interactive Nav and Picture change place 
+
+const porfolioMenu = document.getElementById('portfolio_menu');
+const randomizePictures = function () {
+      const picture = document.querySelectorAll('#galery_picture_ul>li');
+      picture.forEach(function (pic) {
+            pic.style.order = Math.ceil(Math.random() * picture.length);
+      })
+}
+const portfolioMenuClickHandler = function (event) {
+      const lis = porfolioMenu.querySelectorAll('li>a');
+      lis.forEach(function (li) {
+            li.classList.remove('active_nav-list-link');
+      })
+      event.target.classList.add('active_nav-list-link');
+      randomizePictures();
+}
+porfolioMenu.addEventListener('click', portfolioMenuClickHandler);
+
+
 // Portfolio, Appear border after click on picture
 
-const portfolio = document.getElementById('galery_picture');
+const portfolio = document.getElementById('galery_picture_ul');
 const touchElement = function (event) {
       if (event.target == portfolio) {
             return;
       }
-      var imgList = portfolio.getElementsByTagName('img');
+      var imgList = portfolio.querySelectorAll('li>img');
       for (var i = 0; i < imgList.length; i++) {
             imgList[i].classList.remove('img_touch');
       }
@@ -106,61 +181,13 @@ function clearForm() {
 }
 
 
-//Portfolio, interactive Nav and Picture change place 
 
-const porfolioMenu = document.getElementById('portfolio_menu');
-const randomizePictures = function () {
-      const picture = document.querySelectorAll('#galery_picture>img');
-      picture.forEach(function (pic) {
-            pic.style.order = Math.ceil(Math.random() * picture.length);
-      })
-}
-const portfolioMenuClickHandler = function (event) {
-      const lis = porfolioMenu.querySelectorAll('li>a');
-      lis.forEach(function (li) {
-            li.classList.remove('active_nav-list-link');
-      })
-      event.target.classList.add('active_nav-list-link');
-      randomizePictures();
-}
-porfolioMenu.addEventListener('click', portfolioMenuClickHandler);
-
-
-//Slider Phone
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-      showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-      showSlides(slideIndex = n)
-}
-
-function showSlides(n) {
-      var slides = document.getElementsByClassName('phoneSlaid');
-      if (n > slides.length) {
-            slideIndex = 1
-      }
-      if (n < 1) {
-            slideIndex = slides.length
-      }
-      for (var i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-      }
-      slides[slideIndex - 1].style.display = "flex";
-
-}
-
-
-      
 // Submit load default
 
-function loadDefault(){
-document.getElementById('btn').addEventListener("click", formDefault, false);
+function loadDefault() {
+      document.getElementById('btn').addEventListener("click", formDefault, false);
 }
-function formDefault(event){
-            event.preventDefault();
-      }
+
+function formDefault(event) {
+      event.preventDefault();
+}
