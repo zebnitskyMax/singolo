@@ -15,12 +15,16 @@
 <body>
     <div class="wrapper">
         <header class="clear">
-            <span><i id="gambur" class="fas fa-bars gamburger" onclick="function getGamburger(event)"></i></span>
+            <span><i id="gambur" class="fas fa-bars gamburger" onclick="appearBurgerMenu(event)"></i></span>
              <a href="">
                 <h1 class="logo-head">Singolo<sup class="sign-multy"> *</sup>
                 </h1>
             </a>
-            <ul class="nav" id="menu_li" onclick="function appearBurgerMenu(event)">
+            <ul class="nav nav-mobile" id="menu_li">
+                <li class="header-mobile">
+                    <i class="fas fa-bars gamburger" onclick="appearBurgerMenu(event)"></i>
+                    <h1>Singolo<sup class="sign-multy"> *</sup></h1>
+                </li>
                 <li class="active">
                     <a class="a_color" href="#HOME">HOME</a>
                 </li>
@@ -49,7 +53,7 @@
                                 alt=""></a>
                         <ul class="all_phone phoneAnima">
                             <li class="pho1  phoneSlaid">
-                                <img src="assets/img/Slide-11.png" alt="">
+                                <img src="assets/img/singolo-full_02.png" alt="">
                                 <a href="" class="block_blackWindow1 " onclick="viewBlackWindow(event,this)">
                                     <div class="blackWindow"></div>
                                 </a>

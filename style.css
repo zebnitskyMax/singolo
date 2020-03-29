@@ -19,71 +19,17 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
-
-}
-
-@media(max-width:768px){
-
-
 }
 
 
-                        #gambur{
-                            display: none;
-                        }
-                        @media(max-width:320px){
-                            .gamburger{
-                                float: left;
-                                margin: 15px 20px 0 0 !important;
-                                font-size: 20px;
-                            }  
-                        }
-                        @media(max-width:655px){
+#gambur{
+    display: none;
+}   
 
-                        #logo{
-                                font-size: 19px;
-                                margin: 0 auto !important;
-                                
-                            }
-                        
-                       
-                     /*    .nav{
-                            display: none !important;
-                        } */
-                        #gambur{
-                            display: block;
-                        }
 
-                        .gamburger{
-                            float: left;
-                            margin: 15px 90px 0 0;
-                            font-size: 20px;
-                        }
-                        .gamburger:hover{
-                            transform: rotate(90deg);
-                        }
-
-                       /*  .window_nav_menu{
-                            width:45%;
-                            height: 70%;
-                            background: rgb(0, 0, 0, 0.6);
-                            display: block;
-                        } */
-
-                        .nav{
-                            display: none !important ;
-                            width: 60%;
-                            /* height: 70%; */
-                            background: rgb(0, 0, 0, 0.95);
-                            position: absolute;
-                            top: 60px;
-                            left: 0px;
-                            list-style-type: none !important;
-                        }
-
-                    }
-                    
-
+.header-mobile{
+    display: none;
+}
 .clear::after {
     content: "";
     clear: both;
@@ -148,6 +94,94 @@ header {
 .sign-multy {
     color: #DC6660;
 }
+
+
+
+                                @media(max-width:320px){
+                                    .gamburger{
+                                        float: left;
+                                        margin: 15px 20px 0 0 !important;
+                                        font-size: 20px;
+                                    }  
+                                }
+                                @media screen and (max-width:655px) and (min-width:315px){
+                                header{
+                                    padding: 20px 10px !important;
+                                }
+                                #logo{
+                                        font-size: 19px;
+                                        margin: 0 auto !important;
+                                        
+                                    }
+                                /*    .nav{
+                                    display: none !important;
+                                } */
+                                #gambur{
+                                    display: block;
+                                }
+
+                                .gamburger{
+                                    float: left;
+                                    margin: 15px 90px 0 0;
+                                    font-size: 20px;
+                                    color: #FFFFFF;
+                                }
+                                /* .gamburger:hover{
+                                    
+                                } */
+
+                                /*  .window_nav_menu{
+                                    width:45%;
+                                    height: 70%;
+                                    background: rgb(0, 0, 0, 0.6);
+                                    display: block;
+                                } */
+
+                                .nav-mobile{
+                                    display: none /* !important */ ;
+                                    width: 65%;
+                                    /* height: 70%; */
+                                    background: #323746;
+                                    position: fixed;
+                                    top: 0px;
+                                    bottom: 0;
+                                    left: 0px;
+                                    margin: 0 !important;
+                                    list-style-type: none !important;
+                                    transition: .7s ease;
+                                    
+                                }
+                                .header-mobile{
+                                    display: block !important;
+                                    color: #FFFFFF;
+                                    font-size: 24px;
+                                    text-align: center;
+                                    text-transform: uppercase;
+                                    margin: 0 0 40px -40px !important;
+                                    
+                                    
+                                }
+                                .header-mobile .gamburger{
+                                    margin: 10px;
+                                    float: left;
+                                    transform: rotate(90deg);
+                                    color: #FFFFFF;
+                                    font-weight: 600;
+                                   
+                                    
+                                }
+                                .header-mobile h1{
+                                    margin: 10px 0;
+                                    line-height: 20px;
+                                    text-align: left;
+                                    font-size: 14px;
+                                    color: #DEDEDE;
+                                }
+                                .sign-multy {
+                                    color: #DC6660;
+                                }
+
+                                }
 
 .content-singolo_1 {
     /* position: relative; */
@@ -902,13 +936,11 @@ footer p {
         line-height: 29px;
         text-align: justify;
     }
-    .block-contact-inform {
-        width: 95%;
-        /* float: right; */
-    }
+    
     .block-contact-inform{
         text-align: left;
         margin: 0 0px 40px 30px;
+        width: 93%;
     }
 }
 
@@ -951,13 +983,11 @@ footer p {
         line-height: 29px;
         text-align: justify;
     }
-    .block-contact-inform {
-        width: 95%;
-        /* float: right; */
-    }
+    
     .block-contact-inform{
         text-align: left;
         margin: 0 0px 40px 30px;
+        width: 93%;
     }
     #message {
         position: fixed;

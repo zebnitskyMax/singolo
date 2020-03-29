@@ -36,11 +36,7 @@ function onScroll(event) {
 
 
 //burger menu
-function getGamburger(event){
-      event.preventDefault();
-      var elem = document.getElementById('gambur');
-}
-
+ 
 function appearBurgerMenu(event) {
       event.preventDefault();
       var x = document.getElementById('menu_li');
